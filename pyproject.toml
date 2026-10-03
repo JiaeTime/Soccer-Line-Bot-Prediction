@@ -1,0 +1,18 @@
+[project]
+name = "football-line-bot"
+version = "0.1.0"
+description = "LINE chatbot for European football fixtures and match probability predictions."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "httpx",
+    "pydantic",
+    "pydantic-settings",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
